@@ -137,10 +137,16 @@
         <td>Malaysia</td>
       </tr>
     </table>
+    <div style="float: left; border: 2px solid #802711ac; border-radius: 10px; padding: 20px; background-color: #ffe5d4; text-align: center; margin-top: 20px; width: 250px;">
+      <h3 style="margin-bottom: 10px; font-size: 20px;">🎉 Birthday Countdown 🎂</h3>
+      <div id="birthday-countdown" style="font-size: 22px; font-weight: bold; color: #802711;"></div>
+    </div>
+    <div style="float: right; border: 2px solid #802711ac; border-radius: 10px; padding: 20px; background-color: #ffe5d4; text-align: center; margin-top: 20px; width: 250px;">
+      <h3 style="margin-bottom: 10px; font-size: 20px;">✨ New Year Countdown 🎆</h3>
+      <div id="newyear-countdown" style="font-size: 22px; font-weight: bold; color: #802711;"></div>
+    </div>
   </div>
     
- 
-
   
   <div class="rightcolumn" style="font-family: 'Courier New', Courier, monospace;"><b>
       <p style="text-align: justify;">Assalamualaikum and Hello! My name is Nurul Syazwina binti Shoib, and I'm so excited to tell you a little bit about me. I was born on 23<sup>rd</sup> December 2004 in 
@@ -201,8 +207,8 @@
     The drama explores themes of mental health, healing, and empathy, showing how Da-hee learns to take care of 
     herself while supporting others. It also touches on the stigma around mental illness and the importance of human 
     connection in overcoming struggles.</p>
-   </div>
-  </div>
+   </div></br>
+</div>
 </div>
 <button class="btn" onclick="location.href='home.html'">Back</button>
 <button class="btn" onclick="location.href='experience.html'">Next</button>
@@ -234,11 +240,40 @@
     document.getElementById('date').textContent = formattedDate;
     document.getElementById('day').textContent = formattedDay;
     document.getElementById('clock').textContent = formattedTime;
+    
+    const newYear = new Date('January 1, 2025 00:00:00');
+    const timeUntilNewYear = newYear - now;
+    const newYearDays = Math.floor(timeUntilNewYear / (1000 * 60 * 60 * 24));
+    const newYearHours = Math.floor((timeUntilNewYear % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const newYearMinutes = Math.floor((timeUntilNewYear % (1000 * 60 * 60)) / (1000 * 60));
+    const newYearSeconds = Math.floor((timeUntilNewYear % (1000 * 60)) / 1000);
+
+    document.getElementById('newyear-countdown').textContent =
+      `${newYearDays} Days: ${newYearHours} Hours: ${newYearMinutes} Minutes: ${newYearSeconds} Seconds`;
   }
 
   setInterval(updateDateTime, 1000);
   
   updateDateTime();
+
+  function updateCountdown() {
+    const now = new Date();
+
+    const birthday = new Date('December 23, 2024 00:00:00');
+    const timeUntilBirthday = birthday - now;
+    const birthdayDays = Math.floor(timeUntilBirthday / (1000 * 60 * 60 * 24));
+    const birthdayHours = Math.floor((timeUntilBirthday % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const birthdayMinutes = Math.floor((timeUntilBirthday % (1000 * 60 * 60)) / (1000 * 60));
+    const birthdaySeconds = Math.floor((timeUntilBirthday % (1000 * 60)) / 1000);
+
+    document.getElementById('birthday-countdown').textContent =
+      `${birthdayDays} Days : ${birthdayHours} Hours : ${birthdayMinutes} Minutes : ${birthdaySeconds} Seconds`;
+
+  }
+
+  // Update countdown every second
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
 </script>
 
 
