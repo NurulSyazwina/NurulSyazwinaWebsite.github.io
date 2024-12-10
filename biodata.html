@@ -74,10 +74,14 @@
     background-color: #9e3c2f;
   }
 
+  #birthday-countdown, #newyear-countdown {
+    margin-bottom: 40px; 
+  }
+
 </style>
 <body>
 
-  <div class="topnav">
+  <div class="topnav" id="top">
     <a href="contact.html">Contact</a>
     <a href="gallery.html">Gallery</a>
     <a href="family.html">Family</a>
@@ -137,26 +141,33 @@
         <td>Malaysia</td>
       </tr>
     </table>
-    <div style="float: left; border: 2px solid #802711ac; border-radius: 10px; padding: 20px; background-color: #ffe5d4; text-align: center; margin-top: 20px; width: 250px;">
+    <div style="float: left; border: 2px solid #802711ac; border-radius: 10px; padding: 20px; background-color: #ffe5d4; text-align: center; margin-top: 20px; width: 250px; margin-bottom: 30px;">
       <h3 style="margin-bottom: 10px; font-size: 20px;">🎉 Birthday Countdown 🎂</h3>
       <div id="birthday-countdown" style="font-size: 22px; font-weight: bold; color: #802711;"></div>
     </div>
-    <div style="float: right; border: 2px solid #802711ac; border-radius: 10px; padding: 20px; background-color: #ffe5d4; text-align: center; margin-top: 20px; width: 250px;">
+    
+    <div style="float: right; border: 2px solid #802711ac; border-radius: 10px; padding: 20px; background-color: #ffe5d4; text-align: center; margin-top: 20px; width: 250px; margin-bottom: 30px;">
       <h3 style="margin-bottom: 10px; font-size: 20px;">✨ New Year Countdown 🎆</h3>
       <div id="newyear-countdown" style="font-size: 22px; font-weight: bold; color: #802711;"></div>
     </div>
+    
+    <p style="font-size: 18px; text-decoration: underline;" ><b>Favourite Kdrama Series</b></p>
+    <video controls>
+      <source src="kdramavideo.mp4" alt="video kdrama" type="video/mp4">
+    </video>
+ 
   </div>
     
   
   <div class="rightcolumn" style="font-family: 'Courier New', Courier, monospace;"><b>
       <p style="text-align: justify;">Assalamualaikum and Hello! My name is Nurul Syazwina binti Shoib, and I'm so excited to tell you a little bit about me. I was born on 23<sup>rd</sup> December 2004 in 
       the beautful city of Selangor, Malaysia, and now I'm 20 years old. I'm now currently study at Universiti Teknologi MARA (UiTM) Campus Segamat, Johor, where I'm in my last year of Diploma. 
-      In my free time, I love to reading books. I could spent hour diving in reading a fiction novel such as "Empayar" by Teme Abdullah, "Jika Aku" by Anna Lee, "Trio" by Hanani Natasya and more.
+      In my free time, I love to reading books. I could spent hour diving in reading a fiction <a href="#novel">novel</a> such as "Empayar" by Teme Abdullah, "Jika Aku" by Anna Lee, "Trio" by Hanani Natasya and more.
       When I'm not reading, I enjoy imagining my own stories or talking about books with my friends. I also love spending time with my family, especially when everyone gathers together.
      We enjoy eating meals together, chatting, and sometimes playing games or watching movies. These moments make me appreciate my family even more.</p>
      <div style="display: flex; justify-content: space-between;">
       <div style="width:50%;">
-     <ol style="text-align: left;"><p style="font-size: 18px; text-decoration: underline;">My Favourite Author</p>
+     <ol style="text-align: left;"><p style="font-size: 18px; text-decoration: underline;" id="novel">My Favourite Author</p>
       <li>
         Teme Abdullah
       </li>
@@ -192,24 +203,21 @@
     <li><a href="https://youtu.be/jqduqwMeaA0?si=xMAFJzZyX6DD0WbW" target="_blank">Mimpi-Aisyah Aziz</a></li>
     <li><a href="https://youtu.be/tP_GiBW5sug?si=YdtbJjayIylZfIyg" target="_blank">Susun Silang Kata-Aizat Amdan</a></li>
     <li><a href="https://youtu.be/AQpEIZ8dNcU?si=qAZrgW_1sOEQgG-3" target="_blank">Gala bunga Matahari-Sal Priadi</a></li>
-  </ul></b>
+  </ul></b></br>
+<img src="imagemap.jpg" usemap="#image_map">
+<map name="image_map">
+  <area alt="music" title="music" target="_blank" href="https://youtu.be/HB8vftGxsIc?si=rBGu1p6JzDpHocYc" coords="285,49 597,83 564,304 257,266 " shape="polygon">
+  <area alt="pancake" title="pancake" target="_blank" href="https://www.recipetineats.com/pancake-recipe/" coords="246,378,72" shape="circle">
+  <area alt="mocha" title="mocha" target="_blank" href="https://youtu.be/Og7tvzmzWGs?si=3zT-mrru3l0kag03" coords="355,324,460,463" shape="rect">
+  <area alt="book" title="book" target="_blank" href="https://shopee.com.my/Kombo-Empayar-Teme-Abdullah-i.261096280.24033825063?sp_atk=175cb728-67a6-4bd1-b0c2-b60c950657cc&xptdk=175cb728-67a6-4bd1-b0c2-b60c950657cc" coords="565,311,734,483" shape="rect">
+</map>
 </div>
 </div>
-<div class="column" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-  <p style="font-size: 18px; text-decoration: underline;" >Favourite Kdrama Series</p>
-  <video controls>
-    <source src="kdramavideo.mp4" alt="video kdrama" type="video/mp4">
-  </video>
-  <p>"Daily Dose of Sunshine" is a South Korean drama about <b>Jung Da-hee</b>, a young nurse working at a 
-    psychiatric hospital. The story follows her as she cares for patients with mental health issues while also dealing
-     with her own personal struggles. Da-hee is kind and compassionate, but she faces emotional challenges as she helps her patients heal.
-
-    The drama explores themes of mental health, healing, and empathy, showing how Da-hee learns to take care of 
-    herself while supporting others. It also touches on the stigma around mental illness and the importance of human 
-    connection in overcoming struggles.</p>
-   </div></br>
 </div>
-</div>
+</div></br>
+<p style="color: bisque;">Go to the
+  <a href="#top">top</a>.
+</p>
 <button class="btn" onclick="location.href='home.html'">Back</button>
 <button class="btn" onclick="location.href='experience.html'">Next</button>
   </article>
